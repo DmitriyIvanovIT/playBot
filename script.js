@@ -29,6 +29,8 @@ const playBot = function () {
             }
     
             playBotGame();
+        } else if (userAnswer === null) {
+            alert('Спасибо за игру');
         }
     };
 
