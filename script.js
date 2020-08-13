@@ -7,9 +7,7 @@ const playBot = function () {
     let ansverProgram = 33,
     userAnswer = prompt('Угадай число от 1 до 100');
 
-     if (parseFloat(userAnswer) === ansverProgram) {
-        alert('Поздравляю вы победили');
-     } else if (userAnswer !== null) {
+    if (userAnswer !== null) {
         if (!isNumber(userAnswer)) {
             alert('Введи число!');
         } else if (parseFloat(userAnswer) > ansverProgram) {
