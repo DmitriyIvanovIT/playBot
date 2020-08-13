@@ -8,10 +8,11 @@ randomInteger = function (min, max) {
 };
 
 const playBot = function () {
-    let ansverProgram = randomInteger(1, 100),
-    userAnswer = prompt('Угадай число от 1 до 100');
+    let ansverProgram = randomInteger(1, 100);
 
     const playBotGame = function () {
+        let userAnswer = prompt('Угадай число от 1 до 100');
+        
         if (userAnswer !== null) {
             if (!isNumber(userAnswer)) {
                 alert('Введи число!');
