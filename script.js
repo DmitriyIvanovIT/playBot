@@ -23,9 +23,9 @@ const playBot = function () {
     
             playBotGame();
         }
-    }
+    };
 
-   
+    playBotGame();
 };
 
 
