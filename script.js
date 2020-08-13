@@ -27,7 +27,9 @@ const playBot = function () {
 
                     if (userAnswer !== false) {
                         playBot();
-                    }
+                    } else {
+                        alert('Спасибо за игру');
+                    };
                 } else if (parseFloat(userAnswer) > ansverProgram) {
                     alert(`Загаданное число меньше, осталось попыток: ${numberAttempts}`);
                     playBotGame();
@@ -40,9 +42,13 @@ const playBot = function () {
 
             if (userAnswer !== false) {
                 playBot();
-            }
+            } else {
+                alert('Спасибо за игру');
+            };
         };
-        }  
+        } else if (userAnswer === null) {
+            alert('Спасибо за игру');
+        }
     };
 
     playBotGame();
