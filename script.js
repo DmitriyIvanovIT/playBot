@@ -12,8 +12,14 @@ const playBot = function () {
 
     const playBotGame = function () {
         let userAnswer = prompt('Угадай число от 1 до 100');
-        
-        if (userAnswer !== null) {
+
+        if (parseFloat(userAnswer) === ansverProgram) {
+            userAnswer = confirm('Поздравляю, Вы угадали!!! Хотели бы сыграть еще?');
+
+            if (userAnswer !== false) {
+                playBot();
+            }
+        } else if (userAnswer !== null) {
             if (!isNumber(userAnswer)) {
                 alert('Введи число!');
             } else if (parseFloat(userAnswer) > ansverProgram) {
